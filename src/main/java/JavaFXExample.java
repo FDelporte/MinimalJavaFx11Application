@@ -4,8 +4,10 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 public class JavaFXExample {
+
     // We need a private variable so we can change the text on a click on the button.
     private static Label clicked;
 
@@ -27,8 +29,13 @@ public class JavaFXExample {
         button.setStyle("-fx-text-fill: black; -fx-font-size: 14px;");
         button.setOnAction(e -> clicked.setText("You clicked me on " + LocalDateTime.now().toString()));
 
+        // Button to exit the application
+        Button exitButton = new Button("Exit");
+        exitButton.setStyle("-fx-text-fill: black; -fx-font-size: 14px;");
+        exitButton.setOnAction(e -> ((Stage) exitButton.getScene().getWindow()).close());
+
         // Holder to align the items vertically
-        VBox holder = new VBox(versions, button, clicked);
+        VBox holder = new VBox(versions, button, clicked, exitButton);
         holder.setSpacing(20);
         holder.setPadding(new Insets(0, 20, 10, 20));
         holder.setAlignment(Pos.CENTER);
