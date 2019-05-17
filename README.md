@@ -14,7 +14,7 @@ The goal of this project is to be able to generate a JavaFX 11 application with 
 ~~~
 * Start scripts can be found in the "scripts" directory
 
-![Screenshot of the running application on Windows](screenshots/screenshot_on_windows.png)
+![Screenshot of the running application on Windows](screenshots/screenshot_on_windows_running_app.png)
 
 # Detailed info
 See www.webtechie.be
