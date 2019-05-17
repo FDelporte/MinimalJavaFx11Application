@@ -17,4 +17,4 @@ The goal of this project is to be able to generate a JavaFX 11 application with 
 ![Screenshot of the running application on Windows](screenshots/screenshot_on_windows_running_app.png)
 
 # Detailed info
-See www.webtechie.be
+See https://www.webtechie.be/2019/04/01/pijava-part-4-building-a-minimal-javafx-11-application-with-maven
